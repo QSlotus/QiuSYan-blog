@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人 | QiuSYan's Blog</title><meta name="author" content="QiuSYan"><meta name="copyright" content="QiuSYan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="利用你的电脑搭建一个QQ机器人">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人">
-<meta property="og:url" content="http://halo-402.asia/2023/03/23/Linux-Windows-Mirai%EF%BC%9A%E5%88%A9%E7%94%A8-Linux-Windows-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA/index.html">
+<meta property="og:url" content="http://halo-402.asia/2023/03/23/Mirai/index.html">
 <meta property="og:site_name" content="QiuSYan&#39;s Blog">
 <meta property="og:description" content="利用你的电脑搭建一个QQ机器人">
 <meta property="og:locale" content="zh_CN">
@@ -14,7 +14,7 @@
 <meta property="article:tag" content="Mirai">
 <meta property="article:tag" content="机器人搭建">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://halo-402.asia/img/mirai.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://halo-402.asia/2023/03/23/Linux-Windows-Mirai%EF%BC%9A%E5%88%A9%E7%94%A8-Linux-Windows-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+<meta name="twitter:image" content="http://halo-402.asia/img/mirai.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://halo-402.asia/2023/03/23/Mirai/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?c28fe30208463a1cbf11795b24e20459";
@@ -202,55 +202,32 @@
 <p>请打开你的 <code>SSH</code> ，之后都会在这里操作<br>什么？你还没有服务器？那就去这里白嫖一台 <a target="_blank" rel="noopener" href="https://developer.aliyun.com/plan/student">高校计划 - 免费学生云服务器</a> </p>
 </blockquote>
 <blockquote>
-<p>温馨提示：除了在 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/QiuSYan/p/Mirai.html#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83">配置环境</a> 时 <code>CentOS</code> 与 <code>Ubuntu</code> 有细微差别，其他步骤都相同。（如果有些不同我会标注出来</p>
+<p>温馨提示：除了在 <font color="red">配置环境</font> 时 <code>CentOS</code> 与 <code>Ubuntu</code> 有细微差别，其他步骤都相同。（如果有些不同我会标注出来</p>
 </blockquote>
 <h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><p>由于我们选择的是阿里云的镜像，并非纯净镜像，所以一些基本的工具比如 <code>vim</code> 、 <code>wget</code> 就不用安装了（但是还有一些需要</p>
 <p>安装 <code>unzip</code> 和 <code>screen</code>：</p>
-<pre><code># CentOS用户
-yum install unzip
-yum install screen
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># CentOS用户</span><br><span class="line">yum install unzip</span><br><span class="line">yum install screen</span><br><span class="line"></span><br><span class="line"># Ubuntu用户</span><br><span class="line">apt-get update      # 获取最新软件源</span><br><span class="line">apt-get upgrade     #更新软件包</span><br><span class="line">apt install unzip</span><br><span class="line">apt install screen</span><br></pre></td></tr></table></figure>
 
-# Ubuntu用户
-apt-get update      # 获取最新软件源
-apt-get upgrade     #更新软件包
-apt install unzip
-apt install screen
-</code></pre>
 <blockquote>
 <p><del>如果你是用的是纯净 CentOS 镜像，那请你看看我的<a target="_blank" rel="noopener" href="https://ttj.asia/Tech/70.html">这一篇</a>文章，这里讲述了网卡、SSH连接、基本工具的安装等的配置，本教程不再赘述</del></p>
 </blockquote>
 <p>接下来安装 <code>JDK17</code></p>
 <h2 id="安装-JDK17"><a href="#安装-JDK17" class="headerlink" title="安装 JDK17"></a>安装 JDK17</h2><h3 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h3><ol>
 <li><p>下载 JDK17 安装包</p>
-<pre><code> wget https://d6.injdk.cn/openjdk/openjdk/17/openjdk-17.0.1_linux-x64_bin.tar.gz
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://d6.injdk.cn/openjdk/openjdk/17/openjdk-17.0.1_linux-x64_bin.tar.gz</span><br></pre></td></tr></table></figure></li>
 <li><p>解压安装包，修改包名为jdk-17</p>
-<pre><code> tar zxf openjdk-17.0.1_linux-x64_bin.tar.gz
- rm -rf openjdk-17.0.1_linux-x64_bin.tar.gz
- mv jdk-17.0.1 jdk-17
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar zxf openjdk-17.0.1_linux-x64_bin.tar.gz</span><br><span class="line">rm -rf openjdk-17.0.1_linux-x64_bin.tar.gz</span><br><span class="line">mv jdk-17.0.1 jdk-17</span><br></pre></td></tr></table></figure></li>
 <li><p>移动文件夹到/usr/local下</p>
-<pre><code> mv jdk-17 /usr/local/
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv jdk-17 /usr/local/</span><br></pre></td></tr></table></figure></li>
 <li><p>将java添加到环境变量中</p>
-<pre><code> vim /etc/profile
-</code></pre>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
 <p> 在文件的末尾添加：</p>
-<pre><code> export JAVA_HOME=/usr/local/jdk-17
- export PATH=/usr/local/php/bin:/usr/local/jdk-17/bin:$PATH
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/jdk-17</span><br><span class="line">export PATH=/usr/local/php/bin:/usr/local/jdk-17/bin:$PATH</span><br></pre></td></tr></table></figure></li>
 <li><p>加载刚才修改的文件</p>
-<pre><code> source /etc/profile
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure></li>
 <li><p>验证安装</p>
-<pre><code> java -version
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure></li>
 <li><p>显示以下内容，则说明安装成功。</p>
 <pre><code> [root@iZf8zgclasehk957la5s70Z ~]#  java -version
  openjdk version &quot;17.0.1&quot; 2021-10-19
@@ -260,38 +237,31 @@ apt install screen
 </li>
 </ol>
 <h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p>Ubuntu 上安装 JDK17 非常简单。<br>安装 JDK-17：</p>
-<pre><code>apt install openjdk-17-jre
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install openjdk-17-jre</span><br></pre></td></tr></table></figure>
+
 <h1 id="Mirai-相关"><a href="#Mirai-相关" class="headerlink" title="Mirai 相关"></a>Mirai 相关</h1><p>Mirai是一个免费开源高效率、支持全平台的qq机器人框架。<br>这也意味着你可以按照我的步骤在 <ruby><code>Windows/Linux/Mac</code><rt>虽然我没有Mac</rt></ruby> 上搭建你的机器人，搭建步骤大同小异。 </p>
 <h2 id="下载-amp-配置-MCL"><a href="#下载-amp-配置-MCL" class="headerlink" title="下载 &amp; 配置 MCL"></a>下载 &amp; 配置 MCL</h2><ol>
 <li><p>创建一个文件夹并进入 </p>
-<pre><code> mkdir mcl
- cd mcl
-</code></pre>
-</li>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir mcl</span><br><span class="line">cd mcl</span><br></pre></td></tr></table></figure></li>
 <li><p>下载 mcl</p>
-<pre><code> wget https://ghproxy.com/https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip
-</code></pre>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://ghproxy.com/https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>将文件解压</p>
-<pre><code> unzip mcl-2.1.2.zip
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
+
+<p> <strong>可以看到，一共是五个文件：</strong></p>
+<pre><code> [root@iZf8zgclasehk957la5s70Z mcl]# unzip mcl-2.1.2.zip
+ Archive:  mcl-2.1.2.zip
+ inflating: LICENSE                 
+ inflating: mcl                     
+ inflating: mcl.cmd                 
+ inflating: README.md               
+ inflating: mcl.jar                 
 </code></pre>
 </li>
-</ol>
-<pre><code>**可以看到，一共是五个文件：**
-
-    [root@iZf8zgclasehk957la5s70Z mcl]# unzip mcl-2.1.2.zip
-    Archive:  mcl-2.1.2.zip
-    inflating: LICENSE                 
-    inflating: mcl                     
-    inflating: mcl.cmd                 
-    inflating: README.md               
-    inflating: mcl.jar                 
-</code></pre>
-<ol start="4">
 <li><p>启动 mcl </p>
-<pre><code> java -jar mcl.jar
-</code></pre>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar mcl.jar</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>如果你是 <strong>Windows用户</strong> ，请启动 <code>mcl.cmd</code></p>
 </blockquote>
@@ -310,31 +280,22 @@ apt install screen
 </li>
 </ol>
 <h2 id="账号相关"><a href="#账号相关" class="headerlink" title="账号相关"></a>账号相关</h2><h3 id="登录前"><a href="#登录前" class="headerlink" title="登录前"></a>登录前</h3><p>在 <code>「&gt;」</code> 后输入你的账号密码，格式为：</p>
-<pre><code>/autoLogin add &lt;account&gt; &lt;password&gt;
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/autoLogin add &lt;account&gt; &lt;password&gt;</span><br></pre></td></tr></table></figure>
 <p>当输出 <code>已成功添加xxxxxxxx</code> 时，输入 <code>stop</code> 停止mcl。</p>
 <p>随后进入 <code>config/Console</code> ，修改配置文件</p>
-<pre><code>cd config/Console
-vim AutoLogin.yml
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd config/Console</span><br><span class="line">vim AutoLogin.yml</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><img src="https://ttj.asia/usr/uploads/2023/03/1159453416.jpg" alt="1"></p>
 </blockquote>
 <p>如图所示，将下列配置覆盖到最底端的 <code>configuration: &#123;&#125;</code> 处：</p>
-<pre><code>configuration:
-    protocol: MACOS
-    device: device.json
-    enable: true
-    heartbeatStrategy: STAT_HB
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">configuration:</span><br><span class="line">    protocol: MACOS</span><br><span class="line">    device: device.json</span><br><span class="line">    enable: true</span><br><span class="line">    heartbeatStrategy: STAT_HB</span><br></pre></td></tr></table></figure>
 <p>最后 按 <code>Esc</code> ，输入 <code>:wq</code> 保存并退出。</p>
 <p>还要加一个 <a target="_blank" rel="noopener" href="https://github.com/cssxsh/fix-protocol-version"><code>MACOS</code> 协议修复插件</a>。进入到 <code>/mcl/plugins</code> 目录中，输入wget命令下载 <code>fix-protocol-version</code> 。</p>
-<pre><code>wget https://ghproxy.com/https://github.com/cssxsh/fix-protocol-version/releases/download/v1.3.0/fix-protocol-version-1.3.0.mirai2.jar
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://ghproxy.com/https://github.com/cssxsh/fix-protocol-version/releases/download/v1.3.0/fix-protocol-version-1.3.0.mirai2.jar</span><br></pre></td></tr></table></figure>
+
 <p><strong>至此，登录前的准备已经做完了。</strong></p>
 <h3 id="滑块验证"><a href="#滑块验证" class="headerlink" title="滑块验证"></a>滑块验证</h3><p>我们回到 <code>/mcl</code> 目录。输入启动指令。</p>
-<pre><code>java -jar mcl.jar
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar mcl.jar</span><br></pre></td></tr></table></figure>
 <p>启动后，你会得到这样一串信息：</p>
 <pre><code>2023-03-23 18:34:41 I/Bot.XXXXXXXXXX: [SliderCaptcha] 需要滑动验证码, 请按照以下链接的步骤完成滑动验证码, 然后输入获取到的 ticket
 2023-03-23 18:34:41 I/Bot.XXXXXXXXXX: [SliderCaptcha] Slider captcha required. Please solve the captcha with following link. Type ticket here after completion.
@@ -355,19 +316,18 @@ vim AutoLogin.yml
 <p>将鼠标移动到上面，右键 – <code>复制值</code> ，将其粘贴到终端中，回车。<br>随后是一个验证码，输入 yes 即可。最后将你收到的验证码粘贴到终端中，回车。</p>
 <p><strong>Login successful.</strong></p>
 <h1 id="权限节点讲解"><a href="#权限节点讲解" class="headerlink" title="权限节点讲解"></a>权限节点讲解</h1><p>权限节点说明文档：<a target="_blank" rel="noopener" href="https://docs.mirai.mamoe.net/console/Permissions.html#%E8%A2%AB%E8%AE%B8%E5%8F%AF%E4%BA%BA-id">Mirai Console Backend - Permissions</a></p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327110212664-1025835498.png" alt="img"></p>
-</blockquote>
+<img src="/photos/Mirai权限系统 - 被许可人ID.png" alt="Mirai权限系统 - 被许可人ID" title="Mirai权限系统 - 被许可人ID">
+
 <p>就以 <a target="_blank" rel="noopener" href="https://github.com/NLR-DevTeam/GrassPictures#commands-">Grass-Pictures - Commands</a> 的权限节点为例；</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327110057302-2035167236.png" alt="img"></p>
-</blockquote>
+<img src="/photos/Grass-Pic 草图权限.png" alt="Grass-Pic 草图权限" title="Grass-Pic 草图权限">
+
 <p>如果我想在一个群号为 <code>114514</code> 的群中给予本群的所有群员 <strong>获取草图</strong> 的权限，那你需要在 <strong>控制台</strong> 中输入：</p>
-<pre><code>/perm add m114514.* cn.whitrayhb.grasspics:command.grass-pic
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/perm add m114514.* cn.whitrayhb.grasspics:command.grass-pic</span><br></pre></td></tr></table></figure>
 <p>以此类推，如果你需要给一个 QQ号为 <code>1919810</code> 的人 <strong>获取草图当前状态</strong> 的权限，那你需要在 <strong>控制台</strong> 中输入：</p>
-<pre><code>/perm add u1919810 cn.whitrayhb.grasspics:command.grass-pic-status
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/perm add u1919810 cn.whitrayhb.grasspics:command.grass-pic-status</span><br></pre></td></tr></table></figure>
+
+
+
 <h1 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h1><h2 id="Chat-Command"><a href="#Chat-Command" class="headerlink" title="Chat-Command"></a>Chat-Command</h2><blockquote>
 <p>允许在聊天环境下执行指令。</p>
 </blockquote>
@@ -409,9 +369,8 @@ vim AutoLogin.yml
 </tr>
 </tbody></table>
 <p><b><big>注意：请不要在短时间内获取大量草图，否则会被 <del>封禁IP</del> 限流</big> <del>（惨痛教训😭😭😭</del> 但是可以通过加入他们的 QQ 群解除</b></p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327200450797-1684727275.jpg" alt="img"></p>
-</blockquote>
+<img src="/photos/解封实录（.jpg" alt="解封实录（" title="解封实录（">
+
 <h2 id="DouDiZhu"><a href="#DouDiZhu" class="headerlink" title="DouDiZhu"></a>DouDiZhu</h2><blockquote>
 <p>一个能在QQ上斗地主的mirai插件。</p>
 </blockquote>
@@ -510,49 +469,44 @@ databasePassword: password   # 你的数据库密码
 <br>
 
 <h1 id="对于-Windows-用户"><a href="#对于-Windows-用户" class="headerlink" title="对于 Windows 用户"></a>对于 Windows 用户</h1><h2 id="安装-JDK17-1"><a href="#安装-JDK17-1" class="headerlink" title="安装 JDK17"></a>安装 JDK17</h2><p>打开 <a target="_blank" rel="noopener" href="https://www.oracle.com/cn/java/technologies/downloads/#jdk17-windows">Java Downloads</a>，选择 <code>x64 Installer</code> 点击下载。<br>或者直接点击 <a target="_blank" rel="noopener" href="https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe">此处</a> 下载。</p>
-<p>下载完成后，双击运行。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327134443755-1176700754.png" alt="img"></p>
-</blockquote>
+<p>下载完成后，双击运行。<br><img src="/photos/step1.png" title="step1"></p>
 <p>点击 <code>下一步</code> 。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327135914150-418774466.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step2.png" title="step2">
+
 <p>在这一步选择你的 JDK17 安装路径。<br>点击 <code>下一步</code> 后，等待安装完毕。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140021396-1978160532.png" alt="img"><br><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140039939-961859750.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step3.png" title="step3">
+
+<img src="/photos/step4.png" title="step4">
+
 <p>点击 <code>关闭</code> ，JDK17安装完毕。<br>随后验证安装。</p>
 <p>按 <code>Win + R</code> 唤出 <code>运行</code>，输入 <code>cmd</code> ，回车。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140208349-1591092144.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step5.png" title="step5">
+
 <p>输入 <code>java -version</code> 验证安装。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140245600-1250668337.png" alt="img"><br><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140304669-13434770.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step6.png" title="step6">
+
+<img src="/photos/step7.png" title="step7">
+
 <p>安装成功！</p>
 <h2 id="下载-MCL"><a href="#下载-MCL" class="headerlink" title="下载 MCL"></a>下载 MCL</h2><p>打开 <a target="_blank" rel="noopener" href="https://ghproxy.com/https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip">MCL-2.1.2</a>，下载MCL。</p>
 <p>等待下载完毕后，右键解压。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140546123-1734641502.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step1-mcl.png" title="step1">
+
 <p>打开文件夹，双击 <code>mcl.cmd</code> 启动mcl。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140628039-1821199745.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step2-mcl.png" title="step2">
+
 <p>第一次启动会下载相关文件，等待即可。</p>
-<blockquote>
-<p><img src="https://img2023.cnblogs.com/blog/3091946/202303/3091946-20230327140704547-1459408417.png" alt="img"></p>
-</blockquote>
+<img src="/photos/step3-mcl.png" title="step3">
+
+
 <p>剩下部分请查看 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/QiuSYan/p/Mirai.html#%E7%99%BB%E5%BD%95%E5%89%8D">此处</a></p>
 <h1 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h1><p>其他的无非是去 Mirai 论坛/Github 寻找你喜欢的插件，再将它们以 wget/ftp 的形式下载/上传到 <code>/mcl/plugins</code> 目录下。</p>
 <p>好了，去享受你的机器人吧 (￣︶￣*))</p>
-<p>有任何问题欢迎咨询我 Email：<a href="mailto:&#104;&#x61;&#x6c;&#111;&#x2d;&#x34;&#48;&#x32;&#64;&#111;&#x75;&#116;&#108;&#111;&#111;&#x6b;&#x2e;&#99;&#x6f;&#x6d;">&#104;&#x61;&#x6c;&#111;&#x2d;&#x34;&#48;&#x32;&#64;&#111;&#x75;&#116;&#108;&#111;&#111;&#x6b;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>有任何问题欢迎咨询我 Email：<a href="mailto:&#104;&#x61;&#x6c;&#111;&#x2d;&#52;&#48;&#x32;&#x40;&#111;&#117;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#x6f;&#109;">&#104;&#x61;&#x6c;&#111;&#x2d;&#52;&#48;&#x32;&#x40;&#111;&#117;&#116;&#108;&#x6f;&#111;&#107;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <hr>
 <p>End.</p>
 <p><del>PS：后续可能会考虑加一个Windows用户的教程和一些插件的补充说明</del> <b>已经加完力（喜</b></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://halo-402.asia">QiuSYan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://halo-402.asia/2023/03/23/Linux-Windows-Mirai%EF%BC%9A%E5%88%A9%E7%94%A8-Linux-Windows-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA/">http://halo-402.asia/2023/03/23/Linux-Windows-Mirai：利用-Linux-Windows-搭建一个QQ机器人/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://halo-402.asia" target="_blank">QiuSYan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Windows/">Windows</a><a class="post-meta__tags" href="/tags/Mirai/">Mirai</a><a class="post-meta__tags" href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%90%AD%E5%BB%BA/">机器人搭建</a></div><div class="post_share"><div class="social-share" data-image="/img/mirai.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/img/alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/04/14/test/" title="test"><img class="cover" src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">test</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">QiuSYan</div><div class="author-info__description">自能生羽翼，何必仰云梯</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/QSlotus"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:halo-402@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #24292e;"></i></a><a class="social-icon" href="https://github.com/QSlotus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://twitter.com/_QiuSYan_" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #24292e;"></i></a><a class="social-icon" href="https://www.facebook.com/QiuSYan" target="_blank" title="Facebook"><i class="fa-brands fa-facebook" style="color: #24292e;"></i></a><a class="social-icon" href="https://t.me/QiuSYan" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">新的起点，新的开始</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-JDK17"><span class="toc-number">1.1.</span> <span class="toc-text">安装 JDK17</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS"><span class="toc-number">1.1.1.</span> <span class="toc-text">CentOS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ubuntu"><span class="toc-number">1.1.2.</span> <span class="toc-text">Ubuntu</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Mirai-%E7%9B%B8%E5%85%B3"><span class="toc-number">2.</span> <span class="toc-text">Mirai 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-amp-%E9%85%8D%E7%BD%AE-MCL"><span class="toc-number">2.1.</span> <span class="toc-text">下载 &amp; 配置 MCL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A6%E5%8F%B7%E7%9B%B8%E5%85%B3"><span class="toc-number">2.2.</span> <span class="toc-text">账号相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E5%89%8D"><span class="toc-number">2.2.1.</span> <span class="toc-text">登录前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%81"><span class="toc-number">2.2.2.</span> <span class="toc-text">滑块验证</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E8%8A%82%E7%82%B9%E8%AE%B2%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text">权限节点讲解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="toc-number">4.</span> <span class="toc-text">插件推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Chat-Command"><span class="toc-number">4.1.</span> <span class="toc-text">Chat-Command</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Grass-Pic"><span class="toc-number">4.2.</span> <span class="toc-text">Grass-Pic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DouDiZhu"><span class="toc-number">4.3.</span> <span class="toc-text">DouDiZhu</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NiuZi"><span class="toc-number">4.4.</span> <span class="toc-text">NiuZi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WeiboHelper"><span class="toc-number">4.5.</span> <span class="toc-text">WeiboHelper</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lolicon"><span class="toc-number">4.6.</span> <span class="toc-text">Lolicon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Skia"><span class="toc-number">4.7.</span> <span class="toc-text">Skia</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Meme-Helper"><span class="toc-number">4.8.</span> <span class="toc-text">Meme Helper</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8E-Windows-%E7%94%A8%E6%88%B7"><span class="toc-number">5.</span> <span class="toc-text">对于 Windows 用户</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-JDK17-1"><span class="toc-number">5.1.</span> <span class="toc-text">安装 JDK17</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-MCL"><span class="toc-number">5.2.</span> <span class="toc-text">下载 MCL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F"><span class="toc-number">6.</span> <span class="toc-text">结束</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/14/test/" title="test"><img src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="test"/></a><div class="content"><a class="title" href="/2023/04/14/test/" title="test">test</a><time datetime="2023-04-14T09:28:08.000Z" title="发表于 2023-04-14 17:28:08">2023-04-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/23/Linux-Windows-Mirai%EF%BC%9A%E5%88%A9%E7%94%A8-Linux-Windows-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人"><img src="/img/mirai.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人"/></a><div class="content"><a class="title" href="/2023/03/23/Linux-Windows-Mirai%EF%BC%9A%E5%88%A9%E7%94%A8-Linux-Windows-%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人">Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人</a><time datetime="2023-03-23T02:33:00.000Z" title="发表于 2023-03-23 10:33:00">2023-03-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By QiuSYan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://unpkg.com/hexo-theme-butterfly/source/js/utils.js"></script><script src="https://unpkg.com/hexo-theme-butterfly/source/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/fancybox.umd.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.2.0/instantpage.min.js" type="module"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://halo-402.asia">QiuSYan</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://halo-402.asia/2023/03/23/Mirai/">http://halo-402.asia/2023/03/23/Mirai/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://halo-402.asia" target="_blank">QiuSYan's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/Windows/">Windows</a><a class="post-meta__tags" href="/tags/Mirai/">Mirai</a><a class="post-meta__tags" href="/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%90%AD%E5%BB%BA/">机器人搭建</a></div><div class="post_share"><div class="social-share" data-image="/img/mirai.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/img/alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/04/14/test/" title="test"><img class="cover" src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">test</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">QiuSYan</div><div class="author-info__description">自能生羽翼，何必仰云梯</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/QSlotus"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:halo-402@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #24292e;"></i></a><a class="social-icon" href="https://github.com/QSlotus" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="https://twitter.com/_QiuSYan_" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #24292e;"></i></a><a class="social-icon" href="https://www.facebook.com/QiuSYan" target="_blank" title="Facebook"><i class="fa-brands fa-facebook" style="color: #24292e;"></i></a><a class="social-icon" href="https://t.me/QiuSYan" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">新的起点，新的开始</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83"><span class="toc-number">1.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-JDK17"><span class="toc-number">1.1.</span> <span class="toc-text">安装 JDK17</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CentOS"><span class="toc-number">1.1.1.</span> <span class="toc-text">CentOS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ubuntu"><span class="toc-number">1.1.2.</span> <span class="toc-text">Ubuntu</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Mirai-%E7%9B%B8%E5%85%B3"><span class="toc-number">2.</span> <span class="toc-text">Mirai 相关</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-amp-%E9%85%8D%E7%BD%AE-MCL"><span class="toc-number">2.1.</span> <span class="toc-text">下载 &amp; 配置 MCL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%A6%E5%8F%B7%E7%9B%B8%E5%85%B3"><span class="toc-number">2.2.</span> <span class="toc-text">账号相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E5%89%8D"><span class="toc-number">2.2.1.</span> <span class="toc-text">登录前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BB%91%E5%9D%97%E9%AA%8C%E8%AF%81"><span class="toc-number">2.2.2.</span> <span class="toc-text">滑块验证</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E8%8A%82%E7%82%B9%E8%AE%B2%E8%A7%A3"><span class="toc-number">3.</span> <span class="toc-text">权限节点讲解</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="toc-number">4.</span> <span class="toc-text">插件推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Chat-Command"><span class="toc-number">4.1.</span> <span class="toc-text">Chat-Command</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Grass-Pic"><span class="toc-number">4.2.</span> <span class="toc-text">Grass-Pic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DouDiZhu"><span class="toc-number">4.3.</span> <span class="toc-text">DouDiZhu</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NiuZi"><span class="toc-number">4.4.</span> <span class="toc-text">NiuZi</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WeiboHelper"><span class="toc-number">4.5.</span> <span class="toc-text">WeiboHelper</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Lolicon"><span class="toc-number">4.6.</span> <span class="toc-text">Lolicon</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Skia"><span class="toc-number">4.7.</span> <span class="toc-text">Skia</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Meme-Helper"><span class="toc-number">4.8.</span> <span class="toc-text">Meme Helper</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8E-Windows-%E7%94%A8%E6%88%B7"><span class="toc-number">5.</span> <span class="toc-text">对于 Windows 用户</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-JDK17-1"><span class="toc-number">5.1.</span> <span class="toc-text">安装 JDK17</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-MCL"><span class="toc-number">5.2.</span> <span class="toc-text">下载 MCL</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E6%9D%9F"><span class="toc-number">6.</span> <span class="toc-text">结束</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/04/14/test/" title="test"><img src="https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="test"/></a><div class="content"><a class="title" href="/2023/04/14/test/" title="test">test</a><time datetime="2023-04-14T09:28:08.000Z" title="发表于 2023-04-14 17:28:08">2023-04-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/03/23/Mirai/" title="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人"><img src="/img/mirai.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人"/></a><div class="content"><a class="title" href="/2023/03/23/Mirai/" title="Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人">Linux&amp;Windows+Mirai：利用Linux&amp;Windows搭建一个QQ机器人</a><time datetime="2023-03-23T02:33:00.000Z" title="发表于 2023-03-23 10:33:00">2023-03-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2023 By QiuSYan</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="https://unpkg.com/hexo-theme-butterfly/source/js/utils.js"></script><script src="https://unpkg.com/hexo-theme-butterfly/source/js/main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.15/fancybox/fancybox.umd.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.2.0/instantpage.min.js" type="module"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/node-snackbar/0.1.16/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js')
