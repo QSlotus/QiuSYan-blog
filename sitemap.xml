@@ -129,13 +129,6 @@
   </url>
   
   <url>
-    <loc>http://halo-402.asia/tags/%E5%B0%8F%E8%AF%B4/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://halo-402.asia/tags/Typecho/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -151,6 +144,13 @@
   
   <url>
     <loc>http://halo-402.asia/tags/ubuntu/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://halo-402.asia/tags/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -173,14 +173,14 @@
   </url>
   
   <url>
-    <loc>http://halo-402.asia/categories/%E7%99%BE%E5%AE%9D%E7%AE%B1/</loc>
+    <loc>http://halo-402.asia/categories/%E5%B0%8F%E5%AF%84%E5%B7%A7/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://halo-402.asia/categories/%E5%B0%8F%E5%AF%84%E5%B7%A7/</loc>
+    <loc>http://halo-402.asia/categories/%E7%99%BE%E5%AE%9D%E7%AE%B1/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
