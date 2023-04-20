@@ -21,9 +21,9 @@ http://halo-402.asia/tags/Linux/
 http://halo-402.asia/tags/Windows/
 http://halo-402.asia/tags/Mirai/
 http://halo-402.asia/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%90%AD%E5%BB%BA/
+http://halo-402.asia/tags/Gmail/
 http://halo-402.asia/tags/Typecho/
 http://halo-402.asia/tags/Cravatar/
-http://halo-402.asia/tags/Gmail/
 http://halo-402.asia/tags/%E5%B0%8F%E8%AF%B4/
 http://halo-402.asia/tags/ubuntu/
 http://halo-402.asia/tags/todesk/
