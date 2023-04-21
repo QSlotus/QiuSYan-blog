@@ -155,27 +155,6 @@
 
   
   <url>
-    <loc>http://halo-402.asia/tags/Minecraft/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://halo-402.asia/tags/Minecraft-Server/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://halo-402.asia/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://halo-402.asia/tags/Linux/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -204,6 +183,27 @@
   </url>
   
   <url>
+    <loc>http://halo-402.asia/tags/Minecraft/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://halo-402.asia/tags/Minecraft-Server/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://halo-402.asia/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://halo-402.asia/tags/Typecho/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -212,13 +212,6 @@
   
   <url>
     <loc>http://halo-402.asia/tags/Cravatar/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://halo-402.asia/tags/Gmail/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -253,6 +246,20 @@
   </url>
   
   <url>
+    <loc>http://halo-402.asia/tags/Gmail/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://halo-402.asia/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2023-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://halo-402.asia/tags/ubuntu/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -261,13 +268,6 @@
   
   <url>
     <loc>http://halo-402.asia/tags/todesk/</loc>
-    <lastmod>2023-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://halo-402.asia/tags/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2023-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
