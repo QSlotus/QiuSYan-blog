@@ -1,3 +1,4 @@
+https://blog.qiusyan.top/about/index.html
 https://blog.qiusyan.top/44612.html
 https://blog.qiusyan.top/7203.html
 https://blog.qiusyan.top/61913.html
@@ -10,7 +11,6 @@ https://blog.qiusyan.top/2279.html
 https://blog.qiusyan.top/42529.html
 https://blog.qiusyan.top/rickroll.html
 https://blog.qiusyan.top/XinXi/index.html
-https://blog.qiusyan.top/about/index.html
 https://blog.qiusyan.top/guestbook/index.html
 https://blog.qiusyan.top/link/index.html
 https://blog.qiusyan.top/54717.html
@@ -27,14 +27,14 @@ https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/
 https://blog.qiusyan.top/tags/New-Bing/
 https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/
 https://blog.qiusyan.top/tags/nginx/
+https://blog.qiusyan.top/tags/Typecho/
+https://blog.qiusyan.top/tags/Cravatar/
+https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/
 https://blog.qiusyan.top/tags/hexo/
 https://blog.qiusyan.top/tags/hexo-butterfly/
 https://blog.qiusyan.top/tags/comments/
 https://blog.qiusyan.top/tags/giscus/
-https://blog.qiusyan.top/tags/Typecho/
-https://blog.qiusyan.top/tags/Cravatar/
 https://blog.qiusyan.top/tags/Gmail/
-https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/
 https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/
 https://blog.qiusyan.top/tags/ubuntu/
 https://blog.qiusyan.top/tags/todesk/
