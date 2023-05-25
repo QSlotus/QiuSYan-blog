@@ -194,6 +194,13 @@
   </url>
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/Linux/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -216,27 +223,6 @@
   
   <url>
     <loc>https://blog.qiusyan.top/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/nginx/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -285,14 +271,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <loc>https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
+    <loc>https://blog.qiusyan.top/tags/nginx/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -300,6 +286,13 @@
   
   <url>
     <loc>https://blog.qiusyan.top/tags/Gmail/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -319,17 +312,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E9%95%BF%E7%AF%87%E5%A4%A7%E8%AE%BA/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E9%95%BF%E7%AF%87%E5%A4%A7%E8%AE%BA/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
