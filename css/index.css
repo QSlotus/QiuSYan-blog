@@ -1383,7 +1383,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: Microsoft YaHei;
+  font-family: HanYi;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -1497,13 +1497,6 @@ a {
 }
 a:hover {
   color: #49b1f5;
-}
-#site-title,
-#site-subtitle,
-.site-name,
-#aside-content .author-info__name,
-#aside-content .author-info__description {
-  font-family: Titillium Web, 'PingFang SC', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 .is-center {
   text-align: center;
@@ -1949,7 +1942,6 @@ figure.highlight pre .javascript .function {
   height: 100%;
   vertical-align: top;
   text-align: center;
-  font-family: Titillium Web, 'PingFang SC', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 }
 @media screen and (max-width: 768px) {
   .error404 #error-wrap .error-content .error-info {
