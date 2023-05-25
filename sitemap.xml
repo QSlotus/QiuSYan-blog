@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.qiusyan.top/1496.html</loc>
+    
+    <lastmod>2023-05-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/about/index.html</loc>
     
     <lastmod>2023-05-25</lastmod>
@@ -201,13 +210,6 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -243,21 +245,7 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/Typecho/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/Cravatar/</loc>
-    <lastmod>2023-05-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/Gmail/</loc>
+    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -292,6 +280,20 @@
   </url>
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/Typecho/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/Cravatar/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -299,14 +301,21 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
+    <loc>https://blog.qiusyan.top/tags/ubuntu/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/ubuntu/</loc>
+    <loc>https://blog.qiusyan.top/tags/Gmail/</loc>
+    <lastmod>2023-05-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
     <lastmod>2023-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
