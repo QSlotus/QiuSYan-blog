@@ -227,27 +227,6 @@
 
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/Minecraft/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/Minecraft-Server/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.qiusyan.top/tags/Linux/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -276,6 +255,34 @@
   </url>
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/Minecraft/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/Minecraft-Server/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -284,13 +291,6 @@
   
   <url>
     <loc>https://blog.qiusyan.top/tags/nginx/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -383,14 +383,14 @@
 
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E6%96%BD%E5%B7%A5%E4%B8%AD/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E9%95%BF%E7%AF%87%E5%A4%A7%E8%AE%BA/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E9%95%BF%E7%AF%87%E5%A4%A7%E8%AE%BA/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E6%96%BD%E5%B7%A5%E4%B8%AD/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
