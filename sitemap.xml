@@ -227,27 +227,6 @@
 
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/Minecraft/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/Minecraft-Server/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.qiusyan.top/tags/New-Bing/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -283,6 +262,27 @@
   </url>
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/Minecraft/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/Minecraft-Server/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -305,13 +305,6 @@
   
   <url>
     <loc>https://blog.qiusyan.top/tags/Cravatar/</loc>
-    <lastmod>2023-05-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/flag/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -346,6 +339,13 @@
   </url>
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/flag/</loc>
+    <lastmod>2023-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/Gmail/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -360,14 +360,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/ubuntu/</loc>
+    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
+    <loc>https://blog.qiusyan.top/tags/ubuntu/</loc>
     <lastmod>2023-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
