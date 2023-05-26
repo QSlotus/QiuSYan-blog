@@ -27,12 +27,12 @@ https://blog.qiusyan.top/tags/Linux/
 https://blog.qiusyan.top/tags/Windows/
 https://blog.qiusyan.top/tags/Mirai/
 https://blog.qiusyan.top/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%90%AD%E5%BB%BA/
-https://blog.qiusyan.top/tags/Minecraft/
-https://blog.qiusyan.top/tags/Minecraft-Server/
-https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/
 https://blog.qiusyan.top/tags/New-Bing/
 https://blog.qiusyan.top/tags/%E5%AE%9D%E5%A1%94/
 https://blog.qiusyan.top/tags/nginx/
+https://blog.qiusyan.top/tags/Minecraft/
+https://blog.qiusyan.top/tags/Minecraft-Server/
+https://blog.qiusyan.top/tags/%E6%98%95%E5%A4%95%E4%BA%AD/
 https://blog.qiusyan.top/tags/Typecho/
 https://blog.qiusyan.top/tags/Cravatar/
 https://blog.qiusyan.top/tags/flag/
