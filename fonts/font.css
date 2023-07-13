@@ -3,3 +3,10 @@
     font-display: swap;
     src: url('/fonts/HanYi.ttf') format("truetype");  
   }
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-display: swap;
+    src: url('/fonts/Ubuntu-R.ttf') format("truetype");  
+  }
+
