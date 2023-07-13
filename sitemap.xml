@@ -245,6 +245,13 @@
 
   
   <url>
+    <loc>https://blog.qiusyan.top/tags/CentOS/</loc>
+    <lastmod>2023-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.qiusyan.top/tags/Linux/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -301,7 +308,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/CentOS/</loc>
+    <loc>https://blog.qiusyan.top/tags/%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2023-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E4%B8%AD%E8%80%83/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -322,13 +336,6 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%9F%9F%E5%90%8D/</loc>
-    <lastmod>2023-07-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.qiusyan.top/tags/flag/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -336,7 +343,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/%E4%B8%AD%E8%80%83/</loc>
+    <loc>https://blog.qiusyan.top/tags/docker/</loc>
+    <lastmod>2023-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -378,21 +392,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/tags/docker/</loc>
-    <lastmod>2023-07-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2023-07-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.qiusyan.top/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2023-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -407,13 +414,6 @@
   
   <url>
     <loc>https://blog.qiusyan.top/tags/todesk/</loc>
-    <lastmod>2023-07-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.qiusyan.top/tags/%E5%8E%9A%E5%A2%A8/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -436,14 +436,14 @@
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E8%81%8A%E8%81%8A%E5%A4%A9/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.qiusyan.top/categories/%E8%81%8A%E8%81%8A%E5%A4%A9/</loc>
+    <loc>https://blog.qiusyan.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
